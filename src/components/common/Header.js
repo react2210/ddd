@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header(props) {
-  
+
   const active = {
     color: "red",
   };
@@ -45,7 +45,7 @@ export default function Header(props) {
         <ul id="gnb">
           <li>
             <NavLink to="/department" activeStyle={active}>
-              Department
+              Department2
             </NavLink>
           </li>
           <li>
