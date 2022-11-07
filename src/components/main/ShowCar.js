@@ -17,6 +17,12 @@ export default function Showcar() {
             return <li key={idx}>{value}</li>;
           })}
         </ul>
+        <p>New Bugatti Concept System</p>
+
+        <div className="btnWrap">
+          <a href="#">Play</a>
+          <a href="#">View More</a>
+        </div>
       </div>
 
       <div className="car_wrap">

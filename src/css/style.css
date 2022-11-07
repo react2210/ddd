@@ -1153,6 +1153,9 @@ footer {
       display: flex; }
     #car_container.myScroll .title .titleTop li {
       color: #d70d25; }
+    #car_container.myScroll .title .titleBottom li:nth-of-type(5) {
+      margin-right: 20px;
+      margin-bottom: 20px; }
     #car_container.myScroll .title li {
       font: 68px/1 "genesys";
       color: #fff;
@@ -1191,6 +1194,28 @@ footer {
         transition-delay: 1.6s; }
       #car_container.myScroll .title li:nth-of-type(17) {
         transition-delay: 1.7s; }
+  #car_container.myScroll p {
+    font: 16px/1 "arial";
+    color: #9f9f9f;
+    margin-bottom: 40px; }
+  #car_container.myScroll .btnWrap {
+    display: flex; }
+    #car_container.myScroll .btnWrap a {
+      display: block;
+      width: 200px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font: 16px/1 "arial";
+      text-transform: uppercase;
+      color: #fff;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); }
+      #car_container.myScroll .btnWrap a:nth-of-type(1) {
+        border-left: 2px solid red;
+        background: transparent; }
+      #car_container.myScroll .btnWrap a:nth-of-type(2) {
+        border: 1px solid red; }
   #car_container.myScroll .car_wrap {
     width: 1344px;
     position: absolute;
