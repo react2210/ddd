@@ -1,0 +1,53 @@
+#Banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  background: url("../../../public/img/section02/Group\ 22.png") no-repeat
+    center/cover fixed;
+  background-position: center 10%;
+  display: flex;
+  align-items: center;
+
+  .inner {
+    width: 1460px;
+    margin: 0 auto;
+
+    h3.subtitle {
+      padding-top: 52px;
+      color: #d70d25;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      display: flex;
+      font: 54px/1 "genesys";
+      color: #fff;
+
+      li {
+        margin-right: 2px;
+      }
+    }
+
+    .titleTop {
+    }
+
+    .titleBottom {
+      li:nth-of-type(6) {
+        margin-right: 20px;
+      }
+      margin-bottom: 14px;
+    }
+
+    p {
+      color: rgb(175, 175, 175);
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+
+    > a {
+      color: #fff;
+      font: 22px/1 "icielgotham";
+    }
+  }
+}

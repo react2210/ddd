@@ -1,0 +1,101 @@
+.myScroll {
+  &.on {
+    .inner {
+      .carImg {
+        position: absolute;
+        left: -30%;
+        opacity: 1;
+      }
+      .article_bg {
+        width: 100%;
+      }
+    }
+  }
+
+  .inner {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    padding-top: 180px;
+    overflow: hidden;
+
+      
+
+    .carImg {
+      position: absolute;
+      left: -50%;
+      top: 52%;
+      transform: translateY(-50%);
+      transition: all 1.2s;
+      z-index: 10;
+      opacity: 0;
+    }
+
+    .text_box {
+      width: 500px;
+      margin-left: auto;
+      position: absolute;
+      right: 200px;
+      top: 42%;
+      transform: translateY(-50%);
+      z-index: 2;
+
+      .title {
+        display: flex;
+        flex-wrap: wrap;
+        font: 72px/1 "genesys";
+      }
+
+      .titleTop {
+        color: #d70d25;
+      }
+      .titleBottom {
+        margin-bottom: 20px;
+      }
+
+      > p {
+        font: 16px/1.5 "arial";
+        color: #8d8d8d;
+        margin-bottom: 20px;
+      }
+
+      .article_btn {
+        width: 200px;
+        height: 50px;
+        background: transparent;
+        border: 1px solid #d70d25;
+        font: 18px/1 "airal";
+        color: #d70d25;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+
+    .article_bg {
+      width: 0%;
+      height: 420px;
+      position: absolute;
+      right: 0;
+      top: 42%;
+      transform: translateY(-50%);
+      background: rgb(225, 225, 225);
+      transition: all 1.2s 0.2s;
+      margin-bottom: 260px;
+    }
+
+    .linetext {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transition: all 1.2s;
+      font: 120px/1 "genesys";
+      color: transparent;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      -webkit-text-stroke: 1px #999;
+      white-space: nowrap;
+    }
+  }
+}

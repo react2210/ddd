@@ -1,0 +1,87 @@
+.specification_wrap {
+  width: 100%;
+  padding-top: 140px;
+  overflow: hidden;
+
+  .title {
+    display: flex;
+    font: 72px/1 "genesys";
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 14px;
+
+    > li {
+      &:nth-of-type(7) {
+        margin-right: 20px;
+      }
+
+      @for $i from 1 through 7 {
+        &:nth-of-type(#{$i}) {
+          color: #d70d25;
+        }
+      }
+
+      @for $i from 1 through 20 {
+        &:nth-of-type(#{$i}) {
+          transition-delay: 0.1s * $i;
+        }
+      }
+    }
+  }
+
+  .subTitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    li {
+      color: #777;
+      text-transform: uppercase;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .carBack {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    transition: all 1.2s 0.2s;
+    transform: scale(2) translateY(50%) rotate(4deg);
+    opacity: 0;
+  }
+
+  .iconList {
+    width: 880px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+
+    ul {
+      width: 140px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        text-align: center;
+        > img {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.myScroll {
+  &.on {
+    .carBack {
+      transform: scale(1) translateY(0) rotate(0);
+      opacity: 1;
+    }
+  }
+}
